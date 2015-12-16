@@ -1,0 +1,18 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+  {% include mainmenu.html %}
+
+  <div class="centermenu">
+    <p>{% for entry in site.data.sites %}
+      <a href="{{ entry.url }}" rel="me" class="external">{{ entry.title }}</a>
+      {% unless forloop.last %}
+        |
+      {% endunless %}
+    {% endfor %}</p>
+  </div>
+
+  </div>
+
+</footer>

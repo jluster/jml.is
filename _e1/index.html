@@ -1,0 +1,48 @@
+---
+title: E1 Langstreckenwanderung - Etappen
+permalink: /e1/index.html
+category: e1
+tags: e1
+layout: page
+metadesc: "Von Flensburg nach Konstanz, das Logbuch einer Wanderung durch Deutschland"
+---
+
+<div class="navigator">
+  {% for etappe in site.data.e1-sections %}
+    <a href="#{{ etappe.tag }}">{{ etappe.name }}</a>
+    {% unless forloop.last %} | {% endunless %}
+  {% endfor %}
+</div>
+
+
+<div class="etappen">
+{% for etappe in site.data.e1-sections %}
+  <div class="etappe">
+    <h3 id="{{ etappe.tag }}">{{ etappe.name }} {% if etappe.flickr %}<a href="{{ etappe.flickr }}" target='_blank'>Flickr</a>{% endif %}</h3>
+    <p class="desc">
+      {{ etappe.desc }}
+    </p>
+    <div class="meta">
+      {% if etappe.dist %}
+        Sektionslänge: {{ etappe.dist }} Kilometer
+      {% endif %}
+    </div>
+    <ul class="post-list-blog">
+      {% assign counter = -1 %}
+      {% assign etposts = site.posts | reverse %}
+      {% for post in etposts %}
+          {% if post.tags contains "e1" and post.tags contains etappe.tag %}
+            {% assign counter = counter | plus: 1 %}
+            <li>
+              <span class="counter">Eintrag {{ counter | zeroize }} am {{post.date | date:"%d. %B %Y"}}</span> &raquo;
+              <a class="postlink-blog" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              {% if post.front %}
+                &mdash; <em>{{ post.front }}</em>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</div>

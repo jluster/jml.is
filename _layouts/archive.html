@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>Artikelarchiv, Typ: '<em class='hl'>{{ page.type }}</em>', Suche: '<em class='hl'>{{ page.title }}{{ page.date }}</em>'</h1>
+<ul class="post-list-blog">
+  {% assign counter = -1 %}
+  {% assign show_date = "" %}
+  {% for post in page.posts  %}{% assign counter = counter | plus: 1 %}{% assign this_date = post.date | date: "%B %Y" %}
+    {% if show_date !=  this_date %}{% assign show_date = this_date %}
+      <li><b>{{ show_date }}</b></li>
+    {% endif %}
+    <li>
+      <span class="counter">{{ counter | zeroize }}.</span> &raquo;
+      {% if post.language == 'german' or post.language == 'deutsch' %}
+        <img src="/images/de.gif" alt='[german]' title='[deutsch/german]' />
+      {% endif %}
+      <a class="postlink-blog" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% if post.front %}&mdash; {{ post.front }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>

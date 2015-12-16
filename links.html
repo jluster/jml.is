@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /links/index.html
+---
+
+<h2>All Links</h2>
+
+<ul class="post-list-blog">
+  {% assign counter = -1 %}{% assign links = site.data.links | reverse %}
+  {% for post in links  %}{% assign counter = counter | plus: 1 %}
+    <li>
+      <span class="counter">{{ counter | zeroize }}.</span> &raquo;
+      <a target="_blank" class="postlink-blog" href="{{ post.url }}">{{ post.title }}</a>{% if post.desc %} &mdash; {{ post.desc }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>

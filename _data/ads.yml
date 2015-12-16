@@ -1,0 +1,6 @@
+- id: some_id
+  content: >
+    "ad: some_id will display this ad"
+- id: default
+  content: > #
+    If no "ad: xxx" and not "ad: no" display this.

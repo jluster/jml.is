@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+.embedly-cache
+_posts/.Ulysses-Group.plist

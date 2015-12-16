@@ -1,0 +1,26 @@
+- name: Vorbereitungen und Planung
+  tag: planung
+  desc: Alles was in diese Wanderung einfloß, von Ausrüstung bis hin zu Kosten und Karten.
+- name: Schleswig-Holstein und Hamburg
+  tag: schleswig
+  desc: Dieser Teil der Route verläuft zusammen mit dem E6 Fernwanderweg. Er beginnt an der Kupfermühle nahe Flensburg und führt durch Flensburg und Schleswig. Für eine kurze Zeit geht es an der Ostsee entlang, dann nach Kiel. Von dort weiter über Preetz, Plön, Malente-Gremsmühlen, Eutin, und Neustadt bis Lübeck. Nahe Günster trennen sich E1 und E6, diese Sektion ended in Hamburg.
+- name: Niedersachsen
+  tag: niedersachsen
+  dist: 339
+  desc: Von Hamburg geht es über Buchholz in der Nordheide, Undeloh und Soltau weiter nach Müden und Celle, dann ended diese Sektion nahe Bösingfeld.
+- name: Nordrhein-Westfalen
+  tag: nrw
+  dist: 276
+  desc: Von Bösingfeld geht es durch das Sauerland nach Herdorf. Hier gibt es die ersten leichten Steigungen, die Wälder werden dichter, und Campieren etwas schwerer.
+- name: Rheinland-Pfalz
+  tag: rp
+  dist: 169
+  desc: Nur 170 Kilometer ist dieser Abschnitt lang. Er führt von Herdorf bis Idstein recht nahe an Frankfurt heran, und ist etwas hügelig aber sonst die einfachste Sektion.
+- name: Hessen
+  tag: hessen
+  dist: 166
+  desc: Von Idstein führt der Pfad über den Feldberg nach Oberursel. Hier bin ich auch zuhause, also machen wir einen Schlenker nach Friedrichsdorf, dann weiter nach Frankfurt-Sachsenhausen. Von dort geht es über Bensheim nach Heidelberg.
+- name: Baden-Württemberg
+  tag: bawue
+  dist: 464
+  desc: Einige der schönsten Etappen liegen in diesem Abschnitt. Es geht den Schwarzwald Hochweg entlang von Heidelberg nach Schlierbach, dann weiter nach Pforzheim und von dort über den Kaiser-Wilhelm-Turm zum Mummelsee. Der Weg führt nun zum Titisee, auf den Feldberg hinauf, und nach Kappel. Von dort folgt E1 dem Schwarzwald-Querweg nach Freiburg und, schließlich, nach Konstanz wo meine Wanderung dann endet.

@@ -1,0 +1,48 @@
+$text-color:	#839496;
+$background-color: #ffffff;
+$alternate-background: #fdf6e3;
+
+html, body {
+	background-color: $background-color;
+	color: darken($text-color, 20%);
+}
+
+a, a:visited, a:active {
+	color: #00000;
+	border-color: #eee8d5;
+}
+
+a:hover {
+	border-color: #eee8d5;
+	color: #cb4b16;
+}
+
+h1, h2, h3 {
+	color: $text-color;
+}
+
+h1 a, h1 a:visited, h1 a:active {
+	color: #cb4b16;
+}
+
+h1 a:hover {
+	background-color: #eee8d5;
+	border-color: #eee8d5;
+}
+
+article h1 a.anchor {
+	color: #2aa198;
+}
+
+blockquote {
+	border-color: #cb4b16;
+}
+
+#sidebar a:hover {
+	color: #2aa198;
+	background-color: #eee8d5;
+}
+
+#footer {
+	border-color: #eee8d5;
+}

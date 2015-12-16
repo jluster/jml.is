@@ -1,0 +1,6 @@
+- name: "E1 Fernwanderweg"
+  desc: "[In German] 1800 Kilometer von Flensburg nach Konstanz"
+  link: "/e1/"
+- name: "Grüngürtel, Frankfurt"
+  desc: "63 Kilometer in 2 bis 4 Tagen, rund um Frankfurt"
+  link: "/ggf/"

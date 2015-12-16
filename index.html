@@ -1,0 +1,36 @@
+---
+layout: default
+home: true
+---
+{% assign counter = 0 %}
+<div class="home">
+
+  <h2><a href="/e1/">E1 Etappen</a> (May - August 2016)</h2>
+
+  <div class="navigator">
+    {% for etappe in site.data.e1-sections %}
+      <a href="/e1/index.html#{{ etappe.tag }}">{{ etappe.name }}</a>
+      {% unless forloop.last %} | {% endunless %}
+    {% endfor %}
+  </div>
+
+  <h2>Auch noch im Angebot</h2>
+
+  <section style='text-align: center;'>
+    <a href="/blog/"><b>alle artikel</b></a> | <a href="/c/tech">Tech und Dev</a> | <a href="/t/jekyll">Jekyll</a> | <a href="/t/planung">Planen</a>
+  </section>
+
+  <h2>Woanders</h2>
+
+  <section>
+    <p>
+      Meine Bilder findet man auf <a target="_blank" href="http://flickr.com/photos/jluster/">Flickr</a> und, manchmal, <a target="_blank" href="http://instagram.com/jml2061/">Instagram</a>. Alben mit Bildern
+      spezifisch zu einem Trip, sind generell vom Blog-Eintrag des Trips verlinkt.
+    </p>
+    <p>
+      Geschriebenes (größtenteils Englisch) auf <a target="_blank" href="http://trailmikks.io">trailmikks.io</a> und
+      <a target="_blank" href="https://www.quora.com/profile/Jonas-Mikka-Luster/answers?sort=recency">Quora</a>.
+    </p>
+  </section>
+
+</div>

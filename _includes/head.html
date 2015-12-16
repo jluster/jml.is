@@ -1,0 +1,24 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="google-site-verification" content="WjPAwCtXiUi9xtHd3wVFNSwXTJR0qfpwZfwah0gdg8A" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" title="stylesheet" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cousine:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="pingback" href="https://webmention.io/jml.is/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/jml.is/webmention" />
+  <meta http-equiv="cleartype" content="on">
+  <script async src="/js/modernizr.min.js"></script>
+  {% if page.metadesc %}<meta name="description" content="{{ page.metadesc }}" />{% endif %}
+  <meta property="og:type" content="article" />
+  <meta itemprop="og:headline" content="{{ page.title }} -  {{ site.title }}" />
+  <meta itemprop="og:description" content="{% if page.metadesc %}{{ page.metadesc }}{% else %}{% if page.excerpt %}{{ page.excerpt }}{% endif %}{% endif %}" />
+  {% if page.ogimg %}<meta property="og:image" content="{{ page.ogimg }}" />{% endif %}
+</head>

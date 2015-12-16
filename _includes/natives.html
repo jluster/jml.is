@@ -1,0 +1,17 @@
+<section class="native">
+  {% if page.ad != "no" %}
+    {% if page.ad %}
+      {% assign entry = site.data.ads | where:"id", page.ad %}
+      {% if entry %}
+        {{ entry[0].content | markdownify }}
+        You can <a href="https:/twitter.com/legerdemain/">follow me on Twitter (@legerdemain)</a> for more. Comments? Ideas? <a href="mailto:jml@jml.is">Send me an email</a>.
+      {% endif %}
+    {% else %}
+      {% assign entry = site.data.ads | where:"id", "default"  %}
+      {% if entry %}
+        {{ entry[0].content | markdownify }}
+        You can <a href="https:/twitter.com/legerdemain/">follow me on Twitter (@legerdemain)</a> for more. Comments? Ideas? <a href="mailto:jml@jml.is">Send me an email</a>.
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</section>

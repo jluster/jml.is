@@ -1,0 +1,77 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+title: "wand'rin fool"
+email: jml@jml.is
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jml.is" # the base hostname & protocol for your site
+twitter_username: legerdemain
+github_username:  jluster
+webver: ["2.0","#"]
+
+# Build settings
+markdown: kramdown
+
+include: ['_text', '_e1']
+
+gems:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/t/:name/'
+    category: '/c/:name/'
+
+flickr_set:
+  gallery_tag:   'p'
+  gallery_class: 'gallery'
+  a_href:        'h'
+  a_target:      '_blank'
+  image_rel:     'lightbox'
+  image_size:    's'
+  api_key:       ''
+
+instagram:
+  client_id:     ""
+  client_secret: ""
+  access_key:    ""
+
+embedly:
+  api_key: ""
+  photo:
+    width: 1000px;
+  imgur:
+    width: 970px;
+  flickr:
+    width: 970px;
+
+bing:
+  api_key: ""
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: true
+
+coderay:
+  coderay_wrap:              div
+  coderay_line_numbers:      inline
+  coderay_line_number_start: 1
+  coderay_tab_width:         4
+  coderay_bold_every:        10
+  coderay_css:               style
